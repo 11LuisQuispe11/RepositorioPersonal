@@ -190,9 +190,10 @@ h1 {
   opacity: 1;
 }
 
-.overlay .iconos-contenedor {
-  display: flex;
+.iconos-contenedor{
+  display: inline-flex;
 }
+
 
 .overlay i {
   color: black;
