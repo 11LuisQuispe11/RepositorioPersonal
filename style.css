@@ -93,10 +93,15 @@ h1 {
 }
 
 .sobre-mi .contenedor {
-  max-width: 600px;
+  max-width: 1000px;
   text-align: center;
 }
 
+.sobre-mi .contenedor .seccion-texto{
+  max-width: 1000px;
+  text-align: center;
+
+}
 /* Experiencia */
 
 .experiencia {
@@ -409,5 +414,49 @@ footer {
 @media screen and (min-width: 700px) {
   .hero-inferior-imagen {
     max-width: 600px;
+  }
+}
+
+.carrusel {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrusel-contenido {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.informe-powerbi {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+
+.carrusel-anterior, .carrusel-siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 1);
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.carrusel-anterior {
+margin-right:-10px;
+}
+
+.carrusel-siguiente {
+  right: -1px;
+}
+
+/* Ajustes para responsividad */
+@media (max-width: 768px) {
+  .carrusel {
+      width: 100%;
   }
 }
